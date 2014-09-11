@@ -145,7 +145,7 @@ public class s1 {
 	        String filePath = null;
 			try {
 				
-				filePath = System.getProperty("user.dir")+"\\src\\Assignment1\\" + stdin.readLine();
+				filePath = System.getProperty("user.dir")+"/src/Assignment1/" + stdin.readLine();
 				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
