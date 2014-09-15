@@ -1,11 +1,11 @@
 package Assignment1;
 
-public class point {
+public class POINT {
 	
-	int x;
-	int y;
+	private int x;
+	private int y;
 	
-	public point(int x, int y) {
+	public POINT(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -22,6 +22,11 @@ public class point {
 	public void setY(int y) {
 		this.y = y;
 	}
+	
+ 	public int direction(POINT p2, POINT p3) {
+
+ 		return   (p3.getX() - x)*(p2.getY() - y) - (p2.getX() - x)*(p3.getY() - y);
+ 	}
 	
 
 }
